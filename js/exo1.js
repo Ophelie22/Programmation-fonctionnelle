@@ -20,17 +20,11 @@ Notions
 const items = ['Sunglasses', 'Suit', 'Business card', 'Jet ski'];
 //OU avec anonyme autre facon de de faire avec for Each
 
-
-
-
 // récupérer le ul dans le DOM
 const ulElement = document.getElementById('result');
 // console.log(ulElement);
 
-// pour chaque élément du tableau items
-items.forEach(function(item) {
-  // console.log(item);
-
+function createLiElement(item) {
   //   créer un li
   const liElement = document.createElement('li');
 
@@ -39,5 +33,8 @@ items.forEach(function(item) {
 
   //   ajouter le li au DOM (dans le ul)
   ulElement.appendChild(liElement);
-});
 
+}
+// on donne le nom de la fonction, on ne veut pas l'exécuter, c'est forEach qui
+// l'exécutera => pas de parenthèses
+items.forEach(createLiElement);
