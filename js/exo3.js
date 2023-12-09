@@ -49,11 +49,11 @@ const allBox = document.querySelectorAll('.box');
 // l'index de l'élément courant dans le tableau
 // objectif : timer d'une seconde pour la première div, de 2 secondes pour la 2eme, etc
 // allBox.forEach((element, index) => {
-//   // console.log(`index=${index}`);
+/// console.log(`index=${index}`);
 //   setTimeout(() => {
 //     element.style.display = 'block';
 //   }, 1000 * (index + 1));
-//   // index commence à 0, et je veux que le timer du premier élément soit 1000 =>
+  // index commence à 0, et je veux que le timer du premier élément soit 1000 =>
 //   // je vais utiliser index+1
 // });
 
